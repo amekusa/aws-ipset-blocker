@@ -1,6 +1,6 @@
-# AWS Blocker
+# AWS IPSET Blocker
 
-This simple bash script will retrieve the official list of AWS IPv4 and IPv6 ranges, then block them all using iptables.
+This simple bash script will retrieve the official list of AWS IPv4 and IPv6 ranges, then block them all using ipset.
 
 The script is safe to run multiple times. The AWS IP range list is updated periodically, so you may want to run this script as a cron.
 
