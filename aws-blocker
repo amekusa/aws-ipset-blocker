@@ -85,7 +85,7 @@ function create_ipset() {
     ipset create $set hash:net -!
     ipset flush $set
 
-    $iptables -I INPUT -m set --match-set $set src -j DROP
+    $iptables -I INPUT $POSITION -m set --match-set $set src -j DROP
 }
 
 
